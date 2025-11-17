@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using Zenject;
 using Assets.Sources.Scripts.Gameplay.Characters.FSM.State;
 using Assets.Sources.Scripts.Gameplay.Characters.Player.Input;
 using Assets.Sources.Scripts.Gameplay.Characters.Player.States;
 using Assets.Sources.Scripts.Gameplay.Characters.Services.Interfaces;
 using Assets.Sources.Scripts.Gameplay.Characters.Player;
 using Assets.Sources.Scripts.Gameplay.Camera.Interfaces;
+using Assets.Sources.Scripts.Gameplay.Characters.Player.Animator;
 
 namespace Assets.Sources.Scripts.Gameplay.Characters.FSM.Factories
 {

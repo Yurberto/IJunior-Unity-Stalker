@@ -1,5 +1,8 @@
-public interface IPlayerAnimator
+namespace Assets.Sources.Scripts.Gameplay.Characters.Player.Animator
 {
-    public void OnIdle();
-    public void OnMove();
+    public interface IPlayerAnimator
+    {
+        public void OnIdle();
+        public void OnMove();
+    }
 }

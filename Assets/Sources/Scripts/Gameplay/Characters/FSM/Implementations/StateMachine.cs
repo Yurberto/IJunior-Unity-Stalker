@@ -45,7 +45,7 @@ public class StateMachine : IStateChanger, IStateUpdater
         if (_current == newState)
             return;
 
-        if (newState is IExitableState exitableState)
+        if (_current is IExitableState exitableState)
             exitableState.Exit();
 
         _current = newState;

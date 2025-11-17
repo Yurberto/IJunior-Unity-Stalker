@@ -1,5 +1,8 @@
-public interface IPlayerSetting
+namespace Assets.Sources.Scripts.Gameplay.Characters.Player.Setting
 {
-    public float MoveSpeed { get; }
-    public float RotateSpeed { get; }
+    public interface IPlayerSetting
+    {
+        public float MoveSpeed { get; }
+        public float RotateSpeed { get; }
+    }
 }

@@ -15,7 +15,7 @@ namespace Assets.Sources.Scripts.Gameplay.Characters.Services.Implementations
             direction.y = 0;
             direction.Normalize();
 
-            _movable.Move(direction * speed);
+            _movable.SimpleMove(direction * speed);
         }
 
         public void Stop()

@@ -1,8 +1,8 @@
 ﻿using Assets.Sources.Scripts.Gameplay.Characters.FSM.Interfaces;
 using Assets.Sources.Scripts.Gameplay.Characters.FSM.State;
 using Assets.Sources.Scripts.Gameplay.Characters.FSM.State.Updating;
+using Assets.Sources.Scripts.Gameplay.Characters.Player.Animator;
 using Assets.Sources.Scripts.Gameplay.Characters.Player.Input;
-using UnityEngine;
 
 namespace Assets.Sources.Scripts.Gameplay.Characters.Player.States
 {

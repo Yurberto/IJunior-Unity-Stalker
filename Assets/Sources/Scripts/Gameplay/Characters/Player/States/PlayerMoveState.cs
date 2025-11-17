@@ -5,6 +5,7 @@ using Assets.Sources.Scripts.Gameplay.Characters.FSM.State.Updating;
 using Assets.Sources.Scripts.Gameplay.Camera.Interfaces;
 using Assets.Sources.Scripts.Gameplay.Characters.FSM.Interfaces;
 using Assets.Sources.Scripts.Gameplay.Characters.FSM.State;
+using Assets.Sources.Scripts.Gameplay.Characters.Player.Animator;
 
 namespace Assets.Sources.Scripts.Gameplay.Characters.Player.States
 {
@@ -68,8 +69,8 @@ namespace Assets.Sources.Scripts.Gameplay.Characters.Player.States
 
         private Vector3 CalculateCurrentDirection()
         {
-            Vector3 cameraForward = _cameraView.transform.forward;
-            Vector3 cameraRight = _cameraView.transform.right;
+            Vector3 cameraForward = _cameraView.Transform.forward;
+            Vector3 cameraRight = _cameraView.Transform.right;
 
             return _inputService.MoveDirection.x * cameraRight + _inputService.MoveDirection.z * cameraForward;
         }

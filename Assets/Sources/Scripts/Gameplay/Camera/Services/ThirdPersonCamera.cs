@@ -38,11 +38,11 @@ namespace Assets.Sources.Scripts.Gameplay.Camera.Services
             Quaternion rotation = Quaternion.Euler(-1 * _mouseY, _mouseX, 0.0f);
 
             Vector3 distance = rotation * new Vector3(0.0f, 0.0f, -1 * _camera.Setting.Distance);
-            Vector3 offsetX = _camera.Setting.OffsetX * _camera.transform.right;
+            Vector3 offsetX = _camera.Setting.OffsetX * _camera.Transform.right;
             Vector3 hight = _camera.Setting.Height * Vector3.up;
 
-            _camera.transform.position = _target.position + distance + hight + offsetX;
-            _camera.transform.LookAt(_target.position + hight + offsetX);
+            _camera.Transform.position = _target.position + distance + hight + offsetX;
+            _camera.Transform.LookAt(_target.position + hight + offsetX);
         }
 
         private void UpdateLook()

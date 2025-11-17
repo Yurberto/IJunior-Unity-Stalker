@@ -7,22 +7,24 @@ namespace Assets.Sources.Scripts.Gameplay.Characters.Services.Implementations
     {
         private Rigidbody _movable;
 
+        public RigidbodyMover(Rigidbody movable) =>
+            _movable = movable;
+
         public void Move(Vector3 direction, float speed)
         {
-            direction.y = 0;
-            direction.Normalize();
+            if (direction.sqrMagnitude.LessThenEpsilon())
+                return;
 
-            ChangeSpeed(direction * speed);
+            Vector3 targetVeclocity = direction.normalized * speed;
+            targetVeclocity.y = _movable.velocity.y;
+
+            _movable.velocity = targetVeclocity;
         }
 
         public void Stop()
         {
-            _movable.velocity = new Vector3(0.0f, _movable.velocity.y, 0.0f);
-        }
-
-        private void ChangeSpeed(Vector3 speed)
-        {
-            _movable.velocity = new Vector3(speed.x, _movable.velocity.y, speed.z);
+            Debug.Log("Stop");
+            _movable.velocity = Vector3.zero;
         }
     }
 }

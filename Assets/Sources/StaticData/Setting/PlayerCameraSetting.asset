@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PlayerCameraSetting
   m_EditorClassIdentifier: 
   <Height>k__BackingField: 1.7
-  <Distance>k__BackingField: 1.7
+  <Distance>k__BackingField: 4
   <OffsetX>k__BackingField: 0.5
   <MinYAngle>k__BackingField: -40
-  <MaxYAngle>k__BackingField: 80
-  <Sensitivity>k__BackingField: 120
+  <MaxYAngle>k__BackingField: 50
+  <Sensitivity>k__BackingField: 30

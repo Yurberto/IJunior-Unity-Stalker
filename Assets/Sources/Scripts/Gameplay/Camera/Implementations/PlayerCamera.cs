@@ -2,6 +2,7 @@ using UnityEngine;
 using Assets.Sources.Scripts.Gameplay.Camera.Interfaces;
 using Assets.Sources.Scripts.Gameplay.Camera.Services;
 using Assets.Sources.Scripts.Gameplay.Characters.Player.Input;
+using Assets.Sources.Scripts.Gameplay.Camera.Setting;
 
 public class PlayerCamera : MonoBehaviour, ICameraView
 {
@@ -12,6 +13,7 @@ public class PlayerCamera : MonoBehaviour, ICameraView
     private ThirdPersonCamera _cameraService;
 
     public ICameraSetting Setting => _cameraSetting;
+    public Transform Transform => _camera;
 
     public void Initialize(IInputService inputService)
     {

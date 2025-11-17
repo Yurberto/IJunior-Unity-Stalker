@@ -1,19 +1,19 @@
-using UnityEngine;
+using Assets.Sources.StaticData.Animator;
 
-public class PlayerAnimator : IPlayerAnimator
+namespace Assets.Sources.Scripts.Gameplay.Characters.Player.Animator
 {
-    private Animator _animator;
-
-    public PlayerAnimator(Animator animator) =>
-        _animator = animator;
-
-    public void OnIdle()
+    public class PlayerAnimator : IPlayerAnimator
     {
-        _animator.SetTrigger(AnimatorData.Idle);
-    }
+        private UnityEngine.Animator _animator;
 
-    public void OnMove()
-    {
-        _animator.SetTrigger(AnimatorData.Run);
+        public PlayerAnimator(UnityEngine.Animator animator) =>
+            _animator = animator;
+
+        public void OnIdle() =>
+            _animator.SetTrigger(PlayerAnimatorData.Idle);
+
+        public void OnMove() =>
+            _animator.SetTrigger(PlayerAnimatorData.Run);
     }
 }
+

@@ -1,9 +1,12 @@
-public interface ICameraSetting
+namespace Assets.Sources.Scripts.Gameplay.Camera.Setting
 {
-    public float Height { get; }
-    public float Distance { get; }
-    public float OffsetX { get; }
-    public float MinYAngle { get; }
-    public float MaxYAngle { get; }
-    public float Sensitivity { get; }
+    public interface ICameraSetting
+    {
+        public float Height { get; }
+        public float Distance { get; }
+        public float OffsetX { get; }
+        public float MinYAngle { get; }
+        public float MaxYAngle { get; }
+        public float Sensitivity { get; }
+    }
 }
