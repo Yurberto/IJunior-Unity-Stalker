@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d649844c84bc0074b8180d4a11310ce0, type: 3}
   m_Name: CompanionSetting
   m_EditorClassIdentifier: 
-  <MoveSpeed>k__BackingField: 3
+  <MoveSpeed>k__BackingField: 150
   <RotateSpeed>k__BackingField: 5
   <FollowDistance>k__BackingField: 5
